@@ -98,6 +98,7 @@ h6,
   border-radius: 50px;
   transition: 0.3s;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 #header .btn-start-coding:hover,
