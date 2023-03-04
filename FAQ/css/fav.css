@@ -1,0 +1,45 @@
+summary.principal {
+    display: block;
+    border: solid #47077F 2px;
+    box-shadow: #250244 2px 2px 2px 2px;
+    width: 100%;
+    padding: 30px;
+    color: #47077F;
+    margin: auto;
+}
+
+summary.principal:hover {
+    color: aliceblue;
+    background-color: rgb(79, 50, 209);
+    border: solid black 2px;
+    transition-delay: 0.2s;
+}
+
+summary.secundario, p, ul.conteudo {
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+}
+
+summary.secundario:hover {
+    color:#47077F;
+}
+
+div#principal {
+    border: black solid 1px;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color:#47077F;
+    text-decoration: underline;
+}
+
+.conteudo {
+    border: black solid 1px;
+}
+
+

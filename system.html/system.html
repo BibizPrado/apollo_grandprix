@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Fase 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <link rel="stylesheet" href="css/system.css" />
+    <link href="assets/img/favicon.svg" rel="icon">
+    <script src="https://kit.fontawesome.com/f86f7f3f0f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <aside>
+            <div class="btn-return">
+                <a href="/page-12/page-12.html"><i class="fa-solid fa-chevron-left"></i>Voltar
+                </a>
+            </div>
+
+            <div class="text">
+                <h1 tabindex="1">FASE 1</h1>
+                <h2 tabindex="2">Pronto para codar?</h2>
+                <p tabindex="3"> Após entender como funciona a estrutura básica de um documento HTML, chegou a hora de você construir suas primeiras linhas de código!
+                </p>
+                <button onclick="irParaCodigo()" class="btn-skip" tabindex="4">Começar<i class="fa-solid fa-chevron-right"></i> </button>
+            </div>
+        </aside>
+
+        <main>
+            <header>
+                <h3><span>&lt&gt</span>CÓDIGO</h3>
+            </header>
+            <div class="editor-container">
+                <div class="lines-column">
+            <div class="line-number">
+                 1<br>
+                 2<br>
+                 3<br>
+                 4<br>
+                 5<br>
+                 6<br>
+                 7<br>
+                 8<br>
+                 9<br>
+                 10<br>
+                 11<br>
+                 12<br>
+                 </div>
+            </div>
+
+
+            <div class="code-example">
+                <span id="selected-tag">&lt!DOCTYPE html&gt</span> <br>
+                <span>&lthtml lang="pt-br"&gt</span> <br>
+                <span>&lthead&gt</span> <br>
+                <span>&lttitle&gtTítulo da página&lt/title&gt</span> <br>
+                <span>&lt/head&gt</span> <br>
+                <span>&ltbody&gt</span> <br>
+                <br>
+                <span>&lth1&gtTítulo do corpo da página&lt/h1&gt</span> <br>
+                <span>&ltp&gtParágrafo&lt/p&gt</span> <br>
+                <br>
+                <span>&lt/body&gt</span> <br>
+                <span>&lt/html&gt</span> <br>
+            </div>
+
+            <div class="divider-line">
+    
+            </div>
+
+            <div class="coding-area">
+                <textarea name="code-area" id="codigo" onkeydown="correto(event)"></textarea>
+            </div>
+            </div>
+
+
+            <footer>
+                <button class="btn-execute" onclick="funcexecut()">Executar Código</button>
+        
+                <div class="btn-actions">
+                    <button class="undo" tabindex="5"onclick="reset()"> <i class="fa-solid fa-arrow-rotate-left"></i> </button>
+                </div>
+            </footer>
+        </main>
+
+
+        <div id="result"class="test">
+            <h1>
+                Título do corpo da página
+            </h1>
+
+            <p>
+                Parágrafo
+            </p>
+        </div>
+    </div>
+
+    
+</body>
+<script src="js/system.js"></script>
+</html>

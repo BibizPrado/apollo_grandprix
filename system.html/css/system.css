@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    background-color: #E9ECFA;
+    height: 100vh;
+    width: 25%;
+    padding: 0px 30px;
+}
+
+aside .btn-return{
+    margin-top: 25px;
+}
+
+aside .btn-return a {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+}
+
+aside .btn-return i {
+    margin-right: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+aside h1 {
+    font-size: 2.5em;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.25em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 900;
+}
+
+aside h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+aside p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1.4em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 0.95em;
+}
+
+aside .btn-skip {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 8px 18px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    border: none;
+}
+
+aside .btn-skip:hover {
+    background: #212121;
+}
+
+aside .btn-skip i {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+main {
+    background-color: #F4F5FC;
+    height: 100vh;
+    width: 60%;
+    position: relative;
+}
+
+.editor-container {
+    display : flex;
+    flex-direction : row;
+}
+
+.lines-column {
+    border-right: 1px solid rgba(0, 0, 0, 25%); 
+    background-color: #F4F5FC;
+    white-space: nowrap;
+    padding: 0 6px 0 5px;
+    min-width: 20px;
+    text-align: right;
+    color: #282828;
+    height: 100vh;
+    width: 6%;
+  }
+
+  .lines-column .line-number {
+    padding: 80px 8px 0 5px;
+    min-width: 20px;
+    text-align: right;
+    color: #282828;
+    white-space: nowrap;
+  }
+
+ .code-example {
+    margin: 80px 0 0 10px;
+  }
+
+ .code-example span{
+    color: #77787D;
+    font-weight: 500;
+ }
+
+  .code-example #selected-tag {
+    color: #223BC9;
+  }
+
+  .test {
+    padding: 70px 0 0 30px;
+  }
+  .test h1 {
+    font-weight: 500;
+  }
+
+  .test p {
+    margin-top: 25px;
+  }
+
+  .coding-area {
+    margin-top: 80px;
+    margin-left: 52px;
+  }
+
+  textarea {
+    color: 000;
+    background: transparent;
+    border: 2px dotted rgba(0, 0, 0, 25%);
+    position: absolute;
+    padding: 10px;
+    z-index: 5;
+    height: 360px;
+    width: 220px;
+    font-size: 20px;
+  }
+
+  .divider-line { 
+    background-color: rgba(0, 0, 0, 25%);
+    white-space: nowrap;
+    margin: 0 40px 0 40px;
+    text-align: center;
+    color: #282828;
+    height: 100vh;
+    width: 0.06em;
+  }
+
+header {
+    background-color: #F4F5FC;
+    position: absolute;
+    height: 42px;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 25%);
+    display: flex;
+    align-items: center;
+}
+
+header h3 {
+    color: rgba(0, 0, 0, 65%);
+    font-weight: 500;
+    font-size: 0.87em;
+}
+
+header span{
+    padding-left: 30px;
+    padding-right: 8px;
+    color: #223BC9;
+    font-size: 16px;
+}
+
+.test {
+    background-color: white;
+    height: 100vh;
+    width: 30%;
+    color: white;
+}
+
+footer {
+    height: 130px;
+    background-color: #D3D8F4;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+footer .btn-execute {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #223BC9;
+    cursor: pointer;
+    border: none;
+}
+
+footer .btn-execute:hover {
+   background: #2844e1;
+}
+
+footer .btn-actions .undo{
+    width: 60px;
+    height: 45px;
+    border-radius: 5px;
+    transition: 0.5s;
+    color: rgba(0, 0, 0, 60%);
+    background: #fff;
+    cursor: pointer;
+    border: none;
+    margin: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+footer .btn-actions .undo:active {
+    width: 60px;
+    height: 45px;
+    border-radius: 5px;
+    transition: 0.5s;
+    color: rgba(0, 0, 0, 40%);
+    background: rgba(255, 255, 255, 40%);
+    cursor: pointer;
+    border: none;
+    margin: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+footer .btn-actions .undo i {
+    font-size: 20px;
+}
+
+footer .btn-actions .delete{
+    letter-spacing: 1px;
+    width: 60px;
+    height: 45px;
+    border-radius: 5px;
+    transition: 0.5s;
+    color: rgba(0, 0, 0, 60%);
+    background: #fff;
+    cursor: pointer;
+    border: none;
+    margin: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+footer .btn-actions .delete i {
+    font-size: 22px;
+}
+
