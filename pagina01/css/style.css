@@ -91,6 +91,8 @@ h6,
 #header .btn-start-coding:focus {
   font-size: 15px;
   color: #fff;
+  font-size: 15px;
+  color: #fff;
   background: rgba(245, 245, 245, 0);
   border: #fff solid 1px;
   padding: 12px 25px;
@@ -98,7 +100,6 @@ h6,
   border-radius: 50px;
   transition: 0.3s;
   font-weight: 500;
-  margin-bottom: 10px;
 }
 
 #header .btn-start-coding:hover,
